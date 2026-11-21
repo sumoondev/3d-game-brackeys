@@ -3,12 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://cosjky2csy3u" path="res://models/building/floor_wood.glb" id="1_b5lim"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8d472"]
-size = Vector3(4, 0.001, 4.1)
+size = Vector3(4, 0.15, 4)
 
 [node name="FloorWood" type="StaticBody3D" unique_id=722968292]
 
 [node name="floor_wood" parent="." unique_id=171387962 instance=ExtResource("1_b5lim")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2143200592]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09950003, 0.05000013)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.025, 0)
 shape = SubResource("BoxShape3D_8d472")

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cimwvw1um1n4s"]
+
+[ext_resource type="PackedScene" uid="uid://be5cg4gwvuqad" path="res://models/building/wall_tsplit.glb" id="1_w562a"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8d472"]
+size = Vector3(4, 4, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_05c5a"]
+size = Vector3(1, 4, 1.5)
+
+[node name="WallTsplit" type="StaticBody3D" unique_id=1979015444]
+
+[node name="wall_tsplit" parent="." unique_id=1145399389 instance=ExtResource("1_w562a")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=632997680]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_8d472")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=9461135]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1.25)
+shape = SubResource("BoxShape3D_05c5a")
