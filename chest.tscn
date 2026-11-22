@@ -9,6 +9,11 @@ size = Vector3(1.8000001, 1.2, 1)
 
 [node name="chest_gold2" parent="." unique_id=2010333998 instance=ExtResource("1_twpm2")]
 
+[node name="chest_gold_lid" parent="chest_gold2/chest_gold" parent_id_path=PackedInt32Array(2010333998, 1126200931) index="0" unique_id=711164712]
+transform = Transform3D(1, 0, 0, 0, -0.17364822, 0.9848077, 0, -0.9848077, -0.17364822, 0, 0.5, -0.56488323)
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1528831719]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.940697e-08, 0.6, 0)
 shape = SubResource("BoxShape3D_8d472")
+
+[editable path="chest_gold2"]
