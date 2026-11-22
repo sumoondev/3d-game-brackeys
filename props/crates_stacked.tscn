@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cqwwjsh44ojtl"]
+
+[ext_resource type="PackedScene" uid="uid://cotom4nqflh77" path="res://models/props/crates_stacked.glb" id="1_1iqt2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8d472"]
+size = Vector3(0.90000004, 1, 0.90000004)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vu88u"]
+size = Vector3(1.6, 2.1000001, 1.3000001)
+
+[node name="CratesStacked" type="StaticBody3D" unique_id=1619171969]
+
+[node name="crates_stacked2" parent="." unique_id=343873135 instance=ExtResource("1_1iqt2")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1532925791]
+transform = Transform3D(0.9914448, 0, 0.13052619, 0, 1, 0, -0.13052619, 0, 0.9914448, 0.44390145, 0.5, 0.5569541)
+shape = SubResource("BoxShape3D_8d472")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=786537920]
+transform = Transform3D(0.8870108, 0, 0.46174857, 0, 1, 0, -0.46174857, 0, 0.8870108, -0.13799453, 1.0500001, -0.38206005)
+shape = SubResource("BoxShape3D_vu88u")

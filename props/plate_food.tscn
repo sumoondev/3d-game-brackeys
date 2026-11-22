@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dr0tufccmcd35"]
+
+[ext_resource type="PackedScene" uid="uid://cq1drm7dkcbbc" path="res://models/props/plate_food.glb" id="1_l7htw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8d472"]
+size = Vector3(0.90000004, 0.8, 0.90000004)
+
+[node name="PlateFood" type="StaticBody3D" unique_id=422130867]
+
+[node name="plate_food" parent="." unique_id=882788204 instance=ExtResource("1_l7htw")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2021367323]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.049999982, 0.4, -0.049999982)
+shape = SubResource("BoxShape3D_8d472")

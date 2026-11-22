@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://k4lw1o3yv844"]
+
+[ext_resource type="PackedScene" uid="uid://bf0d0ekp6m5as" path="res://models/props/candles.glb" id="1_ki3ti"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8d472"]
+size = Vector3(0.5, 0.8, 0.4)
+
+[node name="Candles" type="StaticBody3D" unique_id=111645715]
+
+[node name="candles" parent="." unique_id=226251698 instance=ExtResource("1_ki3ti")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1365288066]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.050000004, 0.4, 0)
+shape = SubResource("BoxShape3D_8d472")
