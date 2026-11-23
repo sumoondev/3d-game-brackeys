@@ -12,3 +12,9 @@ size = Vector3(0.6, 1, 0.6)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1713201585]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0.3)
 shape = SubResource("BoxShape3D_8d472")
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=843231211]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.7683716e-06, 0.5999999, 0.7999997)
+light_color = Color(1, 0.7393334, 0.07999998, 1)
+shadow_enabled = true
+omni_range = 15.0
